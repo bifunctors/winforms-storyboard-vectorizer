@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WinformsStoryboardVectoriser\WinformsStoryboardVectoriser.csproj" />
+    <ProjectReference Include="..\WinformsStoryboardVectoriser\WinformsStoryboardVectorizer.csproj" />
   </ItemGroup>
 
 </Project>
