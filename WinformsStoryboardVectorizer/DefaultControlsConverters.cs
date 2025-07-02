@@ -9,9 +9,8 @@ public class DefaultControlsConverters {
     }
 
     protected static string ConvertForm(Form form) =>
-        $"<rect x=\"0\" y=\"0\" width=\"{form.Width}\" height=\"{form.Height}\"/>";
+        $"<rect x=\"0\" y=\"0\" width=\"{form.Width}\" height=\"{form.Height}\" fill=\"rgb({form.BackColor.R},{form.BackColor.G},{form.BackColor.B})\"/>";
     protected static string ConvertTextBox(TextBox textbox) => "";
     protected static string ConvertPanel(Panel panel) => 
-        $"<rect x=\"{panel.Left}\" y=\"{panel.Top}\" width=\"{panel.Width}\" height=\"{panel.Height}\"/>";
-    protected static string ConvertButton(Button button)=> "";
+        $"<rect x=\"{panel.Left}\" y=\"{panel.Top}\" width=\"{panel.Width}\" height=\"{panel.Height}\" fill=\"rgb({panel.BackColor.R},{panel.BackColor.G},{panel.BackColor.B})\"/>";    protected static string ConvertButton(Button button)=> "";
 }
