@@ -1,23 +1,24 @@
-﻿using System.Xml.Linq;
+using System.Xml.Linq;
 
 namespace WinformsStoryboardVectorizer;
 
 public class SvgInformation {
-    public static readonly XNamespace SvgNamespace =  "http://www.w3.org/2000/svg";
+    public static readonly XNamespace SvgNamespace = "http://ww.w3.org/2000/svg";
 
     public XDocument Document { get; init; }
+    public XElement Root { get; init; }
+    public XElement Defs { get; init; }
 
-    private readonly XElement _svgRoot;
-    private readonly XElement _defs;
+    public SvgInformation() {
+        Root = new XElement(SvgNamespace + "svg");
+        Defs = new XElement("defs");
+        Root.Add(Defs);
 
-    public SvgInformation(double width, double height) {
-        Document = new();
-        _svgRoot = new(SvgNamespace + "svg");
-        _defs = new(SvgNamespace + "def");
-        _svgRoot.Add(_defs);
+        Document = new XDocument(
+                new XDeclaration("1.0", "utf-8", "yes"),
+                Root
+                );
     }
 
-    public void AddDef(XElement element) => _defs.Add(element);
-
-    public void Add(XElement element) => _svgRoot.Add(element);
+    public void AddToDefs(XElement element) => Defs.Add(element);
 }
