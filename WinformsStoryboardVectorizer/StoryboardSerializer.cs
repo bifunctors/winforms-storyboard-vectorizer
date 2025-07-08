@@ -3,12 +3,18 @@
 namespace WinformsStoryboardVectorizer;
 
 public class StoryboardSerializer {
-    private readonly Dictionary<Type, Func<Control, XElement>> _converters = [];
-    public void Register<T>(Func<T, XElement> converter) where T : Control =>
-        _converters.Add(typeof(T), control => converter((T)control));
+    private readonly Dictionary<Type, Func<Control, SvgInformation, XElement>> _converters = [];
+    public void Register<T>(Func<T, XElement> converter) where T : Control {
+        _converters.Add(typeof(T), (control, svgInformation) => converter((T)control));
+    }
 
-    public void Register<T>(Func<T, string> converter) where T : Control =>
-        _converters.Add(typeof(T), control => XElement.Parse(converter((T)control)));
+    public void Register<T>(Func<T, string> converter) where T : Control {
+        _converters.Add(typeof(T), (control, svgInformation) => XElement.Parse(converter((T)control)));
+    }
+
+    public void Register<T>(Func<T, SvgInformation, XElement> converter) where T : Control {
+        _converters.Add(typeof(T), (control, svgInformation) => converter((T)control, svgInformation));
+    }
 
     private SvgInformation? _svgInformation;
     private int _svgIdIndex;
@@ -23,9 +29,9 @@ public class StoryboardSerializer {
     }
 
     public void Serialize(Control control, XElement root) {
-        Func<Control, XElement> converter = GetConverter(control.GetType());
+        Func<Control, SvgInformation, XElement> converter = GetConverter(control.GetType());
 
-        root.Add(converter(control));
+        root.Add(converter(control, _svgInformation));
 
         if (control.Controls.Count == 0) return;
 
@@ -51,9 +57,9 @@ public class StoryboardSerializer {
         }
     }
 
-    private Func<Control, XElement> GetConverter(Type controlType) {
+    private Func<Control, SvgInformation, XElement> GetConverter(Type controlType) {
         while (true) {
-            if (_converters.TryGetValue(controlType, out Func<Control, XElement>? converter)) return converter;
+            if (_converters.TryGetValue(controlType, out Func<Control, SvgInformation, XElement>? converter)) return converter;
             if (controlType.BaseType is null) throw new StoryboardSerializationException(controlType);
             controlType = controlType.BaseType;
         }
