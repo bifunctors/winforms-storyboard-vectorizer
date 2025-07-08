@@ -30,12 +30,21 @@ public class StoryboardSerializer {
         if (control.Controls.Count == 0) return;
 
         string clipPathId = $"{control.Name}-{_svgIdIndex++}";
-        _svgInformation!.AddToDefs(new XElement("clipPath", new XAttribute("id", clipPathId)));
+        _svgInformation!.AddToDefs(
+            new XElement(SvgInformation.SvgNamespace + "clipPath",
+                new XAttribute("id", clipPathId),
+                new XElement(SvgInformation.SvgNamespace + "rect",
+                            new XAttribute("x", 0),
+                            new XAttribute("y", 0),
+                            new XAttribute("width", control.Width),
+                            new XAttribute("height", control.Height))));
 
         XElement newRoot = new(SvgInformation.SvgNamespace + "g",
             new XAttribute("transform", $"translate({control.Location.X},{control.Location.Y})"),
             new XAttribute("clip-path", $"url(#{clipPathId})")
             );
+
+        root.Add(newRoot);
 
         foreach (Control childControl in control.Controls) {
             Serialize(childControl, newRoot);

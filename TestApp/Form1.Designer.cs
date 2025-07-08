@@ -33,32 +33,32 @@
             // 
             panel1.BackColor = SystemColors.ControlDark;
             panel1.Controls.Add(panel2);
-            panel1.Location = new Point(85, 127);
+            panel1.Location = new Point(98, 147);
             panel1.Name = "panel1";
-            panel1.Size = new Size(400, 200);
+            panel1.Size = new Size(462, 231);
             panel1.TabIndex = 0;
             // 
             // panel2
             // 
             panel2.BackColor = SystemColors.ControlDarkDark;
-            panel2.Location = new Point(52, 67);
+            panel2.Location = new Point(60, 77);
             panel2.Name = "panel2";
-            panel2.Size = new Size(262, 91);
+            panel2.Size = new Size(436, 192);
             panel2.TabIndex = 1;
             // 
             // panel3
             // 
             panel3.BackColor = SystemColors.ControlDark;
-            panel3.Location = new Point(520, 127);
+            panel3.Location = new Point(600, 147);
             panel3.Name = "panel3";
-            panel3.Size = new Size(268, 200);
+            panel3.Size = new Size(309, 231);
             panel3.TabIndex = 1;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(15F, 37F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(923, 520);
             Controls.Add(panel3);
             Controls.Add(panel1);
             Name = "Form1";

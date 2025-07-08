@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35825.156 d17.13
+VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinformsStoryboardVectorizer", "WinformsStoryboardVectorizer.csproj", "{5C695B08-C9E3-4688-B592-35A9ECE95866}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "..\TestApp\TestApp.csproj", "{6F97B8C4-C826-D55F-C38C-1F4C4BB5DFB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{5C695B08-C9E3-4688-B592-35A9ECE95866}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C695B08-C9E3-4688-B592-35A9ECE95866}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C695B08-C9E3-4688-B592-35A9ECE95866}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F97B8C4-C826-D55F-C38C-1F4C4BB5DFB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F97B8C4-C826-D55F-C38C-1F4C4BB5DFB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F97B8C4-C826-D55F-C38C-1F4C4BB5DFB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F97B8C4-C826-D55F-C38C-1F4C4BB5DFB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

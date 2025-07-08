@@ -19,7 +19,7 @@ internal static class Program {
 
         Form form = new Form1();
 
-        Debug.WriteLine(serializer.Serialize(form));
+        Debug.WriteLine(serializer.Serialize(form).Document.ToString());
 #endif
 
         Application.Run(new Form1());

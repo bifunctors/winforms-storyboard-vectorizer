@@ -11,7 +11,7 @@ public class SvgInformation {
 
     public SvgInformation() {
         Root = new XElement(SvgNamespace + "svg");
-        Defs = new XElement("defs");
+        Defs = new XElement(SvgNamespace + "defs");
         Root.Add(Defs);
 
         Document = new XDocument(
