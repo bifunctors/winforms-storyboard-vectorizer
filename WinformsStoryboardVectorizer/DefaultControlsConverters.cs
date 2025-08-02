@@ -35,39 +35,39 @@ public class DefaultControlsConverters {
         return new XElement(SvgInformation.SvgNamespace + "g", buttonSvg, buttonTextSvg);
     }
 
-    protected static XElement ConvertCheckBox(CheckBox checkbox) {
+    protected static XElement ConvertCheckBox(CheckBox checkBox) {
         throw new NotImplementedException();
     }
 
-    protected static XElement ConvertCheckedListBox(CheckBox checkbox) {
+    protected static XElement ConvertCheckedListBox(CheckedListBox checkedListBox) {
         throw new NotImplementedException();
     }
 
-    protected static XElement ConvertComboBox(CheckBox checkbox) {
+    protected static XElement ConvertComboBox(ComboBox comboBox) {
         throw new NotImplementedException();
     }
 
-    protected static XElement ConvertContextMenuStrip(CheckBox checkbox) {
+    protected static XElement ConvertContextMenuStrip(ContextMenuStrip contextMenuStrip) {
         throw new NotImplementedException("This will not be implemented");
     }
 
-    protected static XElement ConvertDataGridView(CheckBox checkbox) {
+    protected static XElement ConvertDataGridView(DataGridView dataGridView) {
         throw new NotImplementedException();
     }
 
-    protected static XElement ConvertDateTimePicker(CheckBox checkbox) {
+    protected static XElement ConvertDateTimePicker(DateTimePicker dateTimePicker) {
         throw new NotImplementedException();
     }
 
-    protected static XElement ConvertDomainUpDown(CheckBox checkbox) {
+    protected static XElement ConvertDomainUpDown(DomainUpDown domainUpDown) {
         throw new NotImplementedException();
     }
 
-    protected static XElement ConvertFlowLayoutPanel(CheckBox checkbox) {
+    protected static XElement ConvertFlowLayoutPanel(FlowLayoutPanel flowLayoutPanel) {
         throw new NotImplementedException();
     }
 
-    protected static XElement ConvertGroupBox(CheckBox checkbox) {
+    protected static XElement ConvertGroupBox(GroupBox groupBox) {
         throw new NotImplementedException();
     }
 
