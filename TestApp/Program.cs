@@ -19,7 +19,11 @@ internal static class Program {
 
         Form form = new Form1();
 
-        Debug.WriteLine(serializer.Serialize(form).Document.ToString());
+        string svgText = serializer.Serialize(form).Document.ToString();
+        Debug.WriteLine(svgText);
+
+        string reference = @"C:\Users\mgrac\Documents\repos\winforms-storyboard-vectorizer\WinformsStoryboardVectorizer\reference.svg";
+        File.WriteAllText(reference, svgText);
 #endif
 
         Application.Run(new Form1());
