@@ -1,10 +1,14 @@
 ﻿using System.Xml.Linq;
+using WinformsStoryboardVectorizer.ControlConversion.Converters;
 using WinformsStoryboardVectorizer.ControlConversion.Interfaces;
+using WinformsStoryboardVectorizer.Factories;
 
-namespace WinformsStoryboardVectorizer.ControlConversion.Converters;
+using static WinformsStoryboardVectorizer.ControlConversion.Helpers.SvgConstants;
+
+namespace WinformsStoryboardVectorizer.DefaultControlConverters.Converters;
 public class PanelConverter : ControlConverter<Panel> {
     protected override XElement Convert(Panel panel, ControlConverterFactory converterFactory, ControlIdGenerator controlIdGenerator) {
-        XElement panelSvg = new(_svgNamespace + "rect",
+        XElement panelSvg = new(SvgNamespace + "rect",
             new XAttribute("id", controlIdGenerator.GetNextId(panel.Name)),
             new XAttribute("x", 0),
             new XAttribute("y", 0),
@@ -12,17 +16,17 @@ public class PanelConverter : ControlConverter<Panel> {
             new XAttribute("height", panel.Height),
             new XAttribute("fill", $"rgb({panel.BackColor.R},{panel.BackColor.G},{panel.BackColor.B})"));
 
-        string clipPathId = controlIdGenerator.GetNextId(panel.Name + "clipPath");
-        XElement clipGroup = new(_svgNamespace + "clipPath",
+        string clipPathId = controlIdGenerator.GetNextId(panel.Name + "-clipPath");
+        XElement clipGroup = new(SvgNamespace + "clipPath",
             new XAttribute("id", clipPathId),
-            new XElement(_svgNamespace + "rect",
-                new XAttribute("id", controlIdGenerator.GetNextId(panel.Name + "innerClipRectangle")),
+            new XElement(SvgNamespace + "rect",
+                new XAttribute("id", controlIdGenerator.GetNextId(panel.Name + "-innerClipRectangle")),
                 new XAttribute("x", 0),
                 new XAttribute("y", 0),
                 new XAttribute("width", panel.Width),
                 new XAttribute("height", panel.Height)));
 
-        XElement childSvgs = new(_svgNamespace + "g",
+        XElement childSvgs = new(SvgNamespace + "g",
             new XAttribute("x", 0),
             new XAttribute("y", 0),
             new XAttribute("clip-path", $"url(#{clipPathId})"));
@@ -31,6 +35,6 @@ public class PanelConverter : ControlConverter<Panel> {
             childSvgs.Add(converterFactory.GetControlConverter(childControl).Convert(childControl, converterFactory, controlIdGenerator));
         }
 
-        return new XElement(_svgNamespace + "g", clipGroup, panelSvg, childSvgs);
+        return new XElement(SvgNamespace + "g", new XAttribute("transform", $"translate({panel.Location.X}, {panel.Location.Y})"), clipGroup, panelSvg, childSvgs);
     }
 }

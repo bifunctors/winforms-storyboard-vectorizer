@@ -1,4 +1,4 @@
-﻿namespace WinformsStoryboardVectorizer; 
+﻿namespace WinformsStoryboardVectorizer.ControlConversion; 
 
 [Serializable]
 public class ControlConversionException : Exception {

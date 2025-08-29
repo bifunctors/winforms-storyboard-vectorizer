@@ -1,30 +1,46 @@
-<svg xmlns="http://ww.w3.org/2000/svg">
-  <defs>
-    <clipPath id="Form1-0">
-      <rect x="0" y="0" width="826" height="521" />
+<svg width="800" height="450" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <clipPath id="Form1-clipPath-1">
+      <rect id="Form1-innerClipRectangle-2" x="0.75" y="0.75" width="798.5" height="448.5" />
     </clipPath>
-    <clipPath id="panel1-1">
-      <rect x="0" y="0" width="400" height="200" />
-    </clipPath>
-  </defs>
-  <rect x="0" y="0" width="826" height="521" fill="rgb(240,240,240)" />
-  <g transform="translate(0,0)" clip-path="url(#Form1-0)">
-    <g>
-      <rect x="520" y="366" width="232" height="72" fill="rgb(105,105,105)" />
-      <text x="525" y="433" text-anchor="start" font-size="9pt" fill="rgb(0,0,0)">button1</text>
-    </g>
-    <g>
-      <rect x="287" y="366" width="179" height="72" fill="rgb(188,143,143)" />
-      <text x="461" y="383.46093368530273" text-anchor="end" font-size="9pt" fill="rgb(100,149,237)">button1</text>
-    </g>
-    <g>
-      <rect x="92" y="366" width="150" height="46" fill="rgb(153,180,209)" />
-      <text x="167" y="399.47656021118166" text-anchor="middle" font-size="9pt" fill="rgb(0,0,0)">button1</text>
-    </g>
-    <rect x="520" y="127" width="268" height="200" fill="rgb(160,160,160)" xmlns="" />
-    <rect x="85" y="127" width="400" height="200" fill="rgb(160,160,160)" xmlns="" />
-    <g transform="translate(85,127)" clip-path="url(#panel1-1)">
-      <rect x="52" y="67" width="378" height="166" fill="rgb(105,105,105)" xmlns="" />
+    <rect id="Form1-0" x="0" y="0" width="800" height="450" stroke="rgb(0, 0, 0)" stroke-width="1.5" fill="rgb(255, 255, 255)" />
+    <g x="0" y="0" clip-path="url(#Form1-clipPath-1)">
+      <g transform="translate(109, 383)">
+        <clipPath id="button2-clipPath-4">
+          <rect id="button2-innerClipRectangle-5" x="0.75" y="0.75" width="330.5" height="70.5" />
+        </clipPath>
+        <rect id="button2-3" x="0" y="0" width="332" height="72" stroke="rgb(0, 0, 0)" stroke-width="1.5" fill="rgb(255, 255, 255)" />
+        <g x="0" y="0" clip-path="url(#button2-clipPath-4)" />
+      </g>
+      <g transform="translate(470, 383)">
+        <clipPath id="button1-clipPath-7">
+          <rect id="button1-innerClipRectangle-8" x="0.75" y="0.75" width="330.5" height="70.5" />
+        </clipPath>
+        <rect id="button1-6" x="0" y="0" width="332" height="72" stroke="rgb(0, 0, 0)" stroke-width="1.5" fill="rgb(255, 255, 255)" />
+        <g x="0" y="0" clip-path="url(#button1-clipPath-7)" />
+      </g>
+      <g transform="translate(509, 127)">
+        <clipPath id="panel3-clipPath-10">
+          <rect id="panel3-innerClipRectangle-11" x="0.75" y="0.75" width="255.5" height="175.5" />
+        </clipPath>
+        <rect id="panel3-9" x="0" y="0" width="257" height="177" stroke="rgb(0, 0, 0)" stroke-width="1.5" fill="rgb(255, 255, 255)" />
+        <g x="0" y="0" clip-path="url(#panel3-clipPath-10)" />
+      </g>
+      <g transform="translate(85, 127)">
+        <clipPath id="panel1-clipPath-13">
+          <rect id="panel1-innerClipRectangle-14" x="0.75" y="0.75" width="398.5" height="198.5" />
+        </clipPath>
+        <rect id="panel1-12" x="0" y="0" width="400" height="200" stroke="rgb(0, 0, 0)" stroke-width="1.5" fill="rgb(255, 255, 255)" />
+        <g x="0" y="0" clip-path="url(#panel1-clipPath-13)">
+          <g transform="translate(52, 67)">
+            <clipPath id="panel2-clipPath-16">
+              <rect id="panel2-innerClipRectangle-17" x="0.75" y="0.75" width="376.5" height="164.5" />
+            </clipPath>
+            <rect id="panel2-15" x="0" y="0" width="378" height="166" stroke="rgb(0, 0, 0)" stroke-width="1.5" fill="rgb(255, 255, 255)" />
+            <g x="0" y="0" clip-path="url(#panel2-clipPath-16)" />
+          </g>
+        </g>
+      </g>
     </g>
   </g>
 </svg>

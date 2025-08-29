@@ -1,6 +1,6 @@
 ﻿using System.Xml.Linq;
 using WinformsStoryboardVectorizer.ControlConversion.Converters;
-using WinformsStoryboardVectorizer.ControlConversion.Interfaces;
+using WinformsStoryboardVectorizer.Factories;
 
 namespace WinformsStoryboardVectorizer.ControlConversion.Base; 
 public interface IControlConverter {

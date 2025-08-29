@@ -1,10 +1,10 @@
-﻿using WinformsStoryboardVectorizer.ControlConversion.Converters;
-using WinformsStoryboardVectorizer.ControlConversion.Interfaces;
+﻿using WinformsStoryboardVectorizer.DefaultControlConverters.Converters;
 
 namespace WinformsStoryboardVectorizer.Factories; 
 public class DefautControlConverterFactory : ControlConverterFactory {
     public DefautControlConverterFactory() {
-        Register(new FormConverter());
+        Register(new FormControlConverter());
         Register(new PanelConverter());
+        Register(new ButtonConverter());
     }
 }
