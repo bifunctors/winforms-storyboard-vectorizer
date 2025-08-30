@@ -35,7 +35,7 @@ public class BlockControlConverter : ControlConverter<Control> {
             new XAttribute("clip-path", $"url(#{clipPathId})"));
 
         if (control.Controls.Count > 0) {
-            foreach (Control childControl in control.Controls) {
+            foreach (XElement childControl in GetConvertedChildren(control.Controls)) {
                 childSvgs.Add(converterFactory.GetControlConverter(childControl).Convert(childControl, converterFactory, controlIdGenerator));
             }
         }

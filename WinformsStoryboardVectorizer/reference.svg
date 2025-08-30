@@ -5,39 +5,52 @@
     </clipPath>
     <rect id="Form1-0" x="0" y="0" width="800" height="450" stroke="rgb(0, 0, 0)" stroke-width="1.5" fill="rgb(255, 255, 255)" />
     <g x="0" y="0" clip-path="url(#Form1-clipPath-1)">
-      <g transform="translate(109, 383)">
-        <clipPath id="button2-clipPath-4">
-          <rect id="button2-innerClipRectangle-5" x="0.75" y="0.75" width="330.5" height="70.5" />
+      <g transform="translate(223, 41)">
+        <clipPath id="label1-4">
+          <rect id="label1-clipPath-5" x="1.5" y="1.5" width="78" height="32" />
         </clipPath>
-        <rect id="button2-3" x="0" y="0" width="332" height="72" stroke="rgb(0, 0, 0)" stroke-width="1.5" fill="rgb(255, 255, 255)" />
-        <g x="0" y="0" clip-path="url(#button2-clipPath-4)" />
+        <text id="label1-3" x="39" y="1376396" text-anchor="middle" dominant-baseline="center" font-family="Segoe UI" font-size="32" fill="rgb(0, 0, 0)">label1</text>
+      </g>
+      <g transform="translate(109, 383)">
+        <clipPath id="button2-clipPath-7">
+          <rect id="button2-innerClipRectangle-8" x="0.75" y="0.75" width="330.5" height="70.5" />
+        </clipPath>
+        <rect id="button2-6" x="0" y="0" width="332" height="72" stroke="rgb(0, 0, 0)" stroke-width="1.5" fill="rgb(255, 255, 255)" />
+        <g x="0" y="0" clip-path="url(#button2-clipPath-7)" />
       </g>
       <g transform="translate(470, 383)">
-        <clipPath id="button1-clipPath-7">
-          <rect id="button1-innerClipRectangle-8" x="0.75" y="0.75" width="330.5" height="70.5" />
+        <clipPath id="button1-clipPath-10">
+          <rect id="button1-innerClipRectangle-11" x="0.75" y="0.75" width="330.5" height="70.5" />
         </clipPath>
-        <rect id="button1-6" x="0" y="0" width="332" height="72" stroke="rgb(0, 0, 0)" stroke-width="1.5" fill="rgb(255, 255, 255)" />
-        <g x="0" y="0" clip-path="url(#button1-clipPath-7)" />
+        <rect id="button1-9" x="0" y="0" width="332" height="72" stroke="rgb(0, 0, 0)" stroke-width="1.5" fill="rgb(255, 255, 255)" />
+        <g x="0" y="0" clip-path="url(#button1-clipPath-10)" />
+      </g>
+      <g transform="translate(307, 41)">
+        <clipPath id="panel4-clipPath-13">
+          <rect id="panel4-innerClipRectangle-14" x="0.75" y="0.75" width="255.5" height="30.5" />
+        </clipPath>
+        <rect id="panel4-12" x="0" y="0" width="257" height="32" stroke="rgb(0, 0, 0)" stroke-width="1.5" fill="rgb(255, 255, 255)" />
+        <g x="0" y="0" clip-path="url(#panel4-clipPath-13)" />
       </g>
       <g transform="translate(509, 127)">
-        <clipPath id="panel3-clipPath-10">
-          <rect id="panel3-innerClipRectangle-11" x="0.75" y="0.75" width="255.5" height="175.5" />
+        <clipPath id="panel3-clipPath-16">
+          <rect id="panel3-innerClipRectangle-17" x="0.75" y="0.75" width="255.5" height="175.5" />
         </clipPath>
-        <rect id="panel3-9" x="0" y="0" width="257" height="177" stroke="rgb(0, 0, 0)" stroke-width="1.5" fill="rgb(255, 255, 255)" />
-        <g x="0" y="0" clip-path="url(#panel3-clipPath-10)" />
+        <rect id="panel3-15" x="0" y="0" width="257" height="177" stroke="rgb(0, 0, 0)" stroke-width="1.5" fill="rgb(255, 255, 255)" />
+        <g x="0" y="0" clip-path="url(#panel3-clipPath-16)" />
       </g>
       <g transform="translate(85, 127)">
-        <clipPath id="panel1-clipPath-13">
-          <rect id="panel1-innerClipRectangle-14" x="0.75" y="0.75" width="398.5" height="198.5" />
+        <clipPath id="panel1-clipPath-19">
+          <rect id="panel1-innerClipRectangle-20" x="0.75" y="0.75" width="398.5" height="198.5" />
         </clipPath>
-        <rect id="panel1-12" x="0" y="0" width="400" height="200" stroke="rgb(0, 0, 0)" stroke-width="1.5" fill="rgb(255, 255, 255)" />
-        <g x="0" y="0" clip-path="url(#panel1-clipPath-13)">
+        <rect id="panel1-18" x="0" y="0" width="400" height="200" stroke="rgb(0, 0, 0)" stroke-width="1.5" fill="rgb(255, 255, 255)" />
+        <g x="0" y="0" clip-path="url(#panel1-clipPath-19)">
           <g transform="translate(52, 67)">
-            <clipPath id="panel2-clipPath-16">
-              <rect id="panel2-innerClipRectangle-17" x="0.75" y="0.75" width="376.5" height="164.5" />
+            <clipPath id="panel2-clipPath-22">
+              <rect id="panel2-innerClipRectangle-23" x="0.75" y="0.75" width="376.5" height="164.5" />
             </clipPath>
-            <rect id="panel2-15" x="0" y="0" width="378" height="166" stroke="rgb(0, 0, 0)" stroke-width="1.5" fill="rgb(255, 255, 255)" />
-            <g x="0" y="0" clip-path="url(#panel2-clipPath-16)" />
+            <rect id="panel2-21" x="0" y="0" width="378" height="166" stroke="rgb(0, 0, 0)" stroke-width="1.5" fill="rgb(255, 255, 255)" />
+            <g x="0" y="0" clip-path="url(#panel2-clipPath-22)" />
           </g>
         </g>
       </g>
