@@ -30,7 +30,7 @@ internal static class Program {
 
         string svgText = svg.ToString();
 
-        Debug.WriteLine(svgText);
+        //Debug.WriteLine(svgText);
 
         string reference = @"C:\Users\mgrac\Documents\repos\winforms-storyboard-vectorizer\WinformsStoryboardVectorizer\reference.svg";
         File.WriteAllText(reference, svgText);

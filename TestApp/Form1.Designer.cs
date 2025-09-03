@@ -26,11 +26,16 @@
             panel1 = new Panel();
             panel2 = new Panel();
             panel3 = new Panel();
+            label1 = new Label();
             button1 = new Button();
             button2 = new Button();
-            label1 = new Label();
             panel4 = new Panel();
+            checkBox1 = new CheckBox();
+            checkBox2 = new CheckBox();
+            label2 = new Label();
+            radioButton1 = new RadioButton();
             panel1.SuspendLayout();
+            panel3.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -53,10 +58,21 @@
             // panel3
             // 
             panel3.BackColor = SystemColors.ControlDark;
+            panel3.Controls.Add(label1);
             panel3.Location = new Point(509, 127);
             panel3.Name = "panel3";
             panel3.Size = new Size(257, 177);
             panel3.TabIndex = 1;
+            // 
+            // label1
+            // 
+            label1.Dock = DockStyle.Fill;
+            label1.Location = new Point(0, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(257, 177);
+            label1.TabIndex = 3;
+            label1.Text = "label1";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // button1
             // 
@@ -78,15 +94,6 @@
             button2.TextAlign = ContentAlignment.BottomLeft;
             button2.UseVisualStyleBackColor = true;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(223, 41);
-            label1.Name = "label1";
-            label1.Size = new Size(78, 32);
-            label1.TabIndex = 3;
-            label1.Text = "label1";
-            // 
             // panel4
             // 
             panel4.BackColor = SystemColors.ControlDark;
@@ -95,13 +102,58 @@
             panel4.Size = new Size(257, 32);
             panel4.TabIndex = 1;
             // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(393, 575);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(159, 36);
+            checkBox1.TabIndex = 4;
+            checkBox1.Text = "checkBox1";
+            checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            checkBox2.AutoSize = true;
+            checkBox2.BackColor = SystemColors.Highlight;
+            checkBox2.Location = new Point(596, 575);
+            checkBox2.Name = "checkBox2";
+            checkBox2.Size = new Size(159, 36);
+            checkBox2.TabIndex = 4;
+            checkBox2.Text = "checkBox1";
+            checkBox2.UseVisualStyleBackColor = false;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(208, 41);
+            label2.Name = "label2";
+            label2.Size = new Size(78, 32);
+            label2.TabIndex = 5;
+            label2.Text = "label2";
+            label2.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // radioButton1
+            // 
+            radioButton1.AutoSize = true;
+            radioButton1.Location = new Point(596, 641);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new Size(184, 36);
+            radioButton1.TabIndex = 6;
+            radioButton1.TabStop = true;
+            radioButton1.Text = "radioButton1";
+            radioButton1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.InactiveBorder;
-            ClientSize = new Size(800, 450);
-            Controls.Add(label1);
+            ClientSize = new Size(1214, 753);
+            Controls.Add(radioButton1);
+            Controls.Add(label2);
+            Controls.Add(checkBox2);
+            Controls.Add(checkBox1);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(panel4);
@@ -110,6 +162,7 @@
             Name = "Form1";
             Text = "s";
             panel1.ResumeLayout(false);
+            panel3.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -123,5 +176,9 @@
         private Button button2;
         private Label label1;
         private Panel panel4;
+        private CheckBox checkBox1;
+        private CheckBox checkBox2;
+        private Label label2;
+        private RadioButton radioButton1;
     }
 }

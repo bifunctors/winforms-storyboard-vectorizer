@@ -12,11 +12,11 @@ public class BlockLabelConverter : ControlConverter<Label> {
         XElement labelSvg = new(SvgNamespace + "text",
                 new XAttribute("id", controlIdGenerator.GetNextId(label.Name)),
                 new XAttribute("x", label.Width / 2f),
-                new XAttribute("y", label.Handle / 2f),
+                new XAttribute("y", label.Height / 2f + BlockSvgConstants.TextOffset),
                 new XAttribute("text-anchor", "middle"),
-                new XAttribute("dominant-baseline", "center"),
+                new XAttribute("dominant-baseline", "middle"),
                 new XAttribute("font-family", BlockSvgConstants.TextFont),
-                new XAttribute("font-size", TextRenderer.MeasureText(label.Text, new Font(BlockSvgConstants.TextFont, label.Font.Size)).Height),
+                new XAttribute("font-size", TextRenderer.MeasureText(label.Text, new Font(BlockSvgConstants.TextFont, label.Font.Size)).Height + BlockSvgConstants.FontSizeCorrection),
                 new XAttribute("fill", BlockSvgConstants.TextColor),
                 label.Text);
 
